@@ -48,3 +48,11 @@
 - [x] AI Grant Advisor: replace multi-step form with single large text box OR PDF upload
 - [x] AI Grant Advisor: AI asks follow-up questions until enough info gathered
 - [x] AI Grant Advisor: backend handles PDF extraction + text input uniformly
+
+## Phase 7: KI-Fördercheck Improvements
+- [x] Rewrite AI system prompt: critical evaluation of innovative character
+- [x] Accurate success rate calculation based on real grant criteria
+- [x] AI must challenge weak innovation claims with follow-up questions
+- [x] Add quick-check disclaimer banner on GrantAnalysis page
+- [x] Add in-depth analysis booking CTA after final report
+- [x] Final report must include: innovation score, risk factors, weaknesses, realistic success chances per grant
