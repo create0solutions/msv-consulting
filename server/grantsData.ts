@@ -23,6 +23,7 @@ export interface Grant {
   tags: string[];
   difficulty: "easy" | "medium" | "hard";
   processingTime: string; // e.g. "4-8 weeks"
+  successRate: number; // percentage (0-100) — historical approval rate
 }
 
 export const GRANTS_DATABASE: Grant[] = [
@@ -47,6 +48,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["FFG", "F&E", "Forschung", "Innovation"],
     difficulty: "medium",
     processingTime: "3-6 Monate",
+    successRate: 55,
   },
   {
     id: "ffg-startup",
@@ -68,6 +70,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["FFG", "Startup", "Gründung", "Technologie"],
     difficulty: "medium",
     processingTime: "2-4 Monate",
+    successRate: 62,
   },
   {
     id: "ffg-comet",
@@ -89,6 +92,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["FFG", "COMET", "Kompetenzzentrum", "Kooperation"],
     difficulty: "hard",
     processingTime: "6-12 Monate",
+    successRate: 20,
   },
 
   // === AWS (Austria Wirtschaftsservice) ===
@@ -112,6 +116,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["AWS", "Eigenkapital", "Startup", "Investor"],
     difficulty: "medium",
     processingTime: "2-4 Monate",
+    successRate: 45,
   },
   {
     id: "aws-gruenderfonds",
@@ -133,6 +138,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["AWS", "Gründerfonds", "Beteiligung", "Wachstum"],
     difficulty: "medium",
     processingTime: "3-5 Monate",
+    successRate: 50,
   },
   {
     id: "aws-digitalisierung",
@@ -154,6 +160,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["AWS", "Digitalisierung", "KMU", "Digital"],
     difficulty: "easy",
     processingTime: "4-8 Wochen",
+    successRate: 68,
   },
   {
     id: "aws-eco-innovation",
@@ -175,6 +182,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["AWS", "Ökologie", "Nachhaltigkeit", "Green"],
     difficulty: "medium",
     processingTime: "2-4 Monate",
+    successRate: 52,
   },
 
   // === WKO / Wirtschaftskammer ===
@@ -198,6 +206,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["WKO", "Export", "Internationalisierung", "Markterschließung"],
     difficulty: "easy",
     processingTime: "4-8 Wochen",
+    successRate: 74,
   },
 
   // === Wien Wirtschaft / Wiener Wirtschaftsförderungsfonds ===
@@ -221,6 +230,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["Wien", "Innovation", "Forschung", "Kooperation"],
     difficulty: "easy",
     processingTime: "2-4 Wochen",
+    successRate: 80,
   },
   {
     id: "wwff-gruendungsfoerderung",
@@ -242,6 +252,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["Wien", "Gründung", "Startup", "Förderung"],
     difficulty: "easy",
     processingTime: "3-6 Wochen",
+    successRate: 76,
   },
 
   // === EU / Horizon Europe ===
@@ -265,6 +276,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["EU", "EIC", "Horizon", "Deep Tech", "Scale-up"],
     difficulty: "hard",
     processingTime: "6-12 Monate",
+    successRate: 12,
   },
   {
     id: "eic-pathfinder",
@@ -286,6 +298,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["EU", "EIC", "Deep Tech", "Forschung"],
     difficulty: "hard",
     processingTime: "8-14 Monate",
+    successRate: 8,
   },
   {
     id: "horizon-sme",
@@ -307,6 +320,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["EU", "Horizon", "KMU", "Forschung"],
     difficulty: "hard",
     processingTime: "6-12 Monate",
+    successRate: 15,
   },
 
   // === BMAW / Bundesministerium ===
@@ -330,6 +344,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["KMU", "Digital", "Transformation", "Beratung"],
     difficulty: "easy",
     processingTime: "4-8 Wochen",
+    successRate: 70,
   },
   {
     id: "klima-investitionsfoerderung",
@@ -351,6 +366,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["Klima", "Energie", "Green", "Nachhaltigkeit"],
     difficulty: "medium",
     processingTime: "3-6 Monate",
+    successRate: 48,
   },
   {
     id: "aws-ai-foerderung",
@@ -372,6 +388,7 @@ export const GRANTS_DATABASE: Grant[] = [
     tags: ["AWS", "KI", "AI", "Technologie", "Innovation"],
     difficulty: "medium",
     processingTime: "6-10 Wochen",
+    successRate: 60,
   },
 ];
 

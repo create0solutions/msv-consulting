@@ -38,3 +38,13 @@
 - [x] Mobile responsiveness check
 - [x] SEO meta tags
 - [x] Vitest unit tests for backend procedures
+
+## Phase 6: User-Requested Improvements
+- [x] Upload Maximilian's profile photo to CDN
+- [x] Add profile photo to About section
+- [x] Grant Finder: multi-select for industry, location, funding range
+- [x] Grant Finder: add city/location search with autocomplete
+- [x] Grant Finder: show success rate on result cards
+- [x] AI Grant Advisor: replace multi-step form with single large text box OR PDF upload
+- [x] AI Grant Advisor: AI asks follow-up questions until enough info gathered
+- [x] AI Grant Advisor: backend handles PDF extraction + text input uniformly
