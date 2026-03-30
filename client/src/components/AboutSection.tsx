@@ -25,7 +25,7 @@ function useIntersection(threshold = 0.15) {
 }
 
 export default function AboutSection() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
   const { ref, visible } = useIntersection();
 
   const credentials = [
@@ -108,24 +108,24 @@ export default function AboutSection() {
             ))}
           </div>
 
-          {/* Education */}
+          {/* Key achievement highlight */}
           <div
             className="flex items-start gap-3 p-4 rounded-xl mb-6"
             style={{ background: "rgba(16,185,129,0.1)", border: "1px solid rgba(16,185,129,0.25)" }}
           >
-            <GraduationCap size={20} style={{ color: "oklch(0.70 0.17 162)", flexShrink: 0, marginTop: 2 }} />
+            <Award size={20} style={{ color: "oklch(0.70 0.17 162)", flexShrink: 0, marginTop: 2 }} />
             <div>
               <div
                 className="text-sm font-bold text-white"
                 style={{ fontFamily: "'Nunito Sans', sans-serif" }}
               >
-                {t("about.edu.degree")}
+                {lang === "de" ? "Ehemaliger CEO, OVARTEC GmbH" : "Former CEO, OVARTEC GmbH"}
               </div>
               <div
                 className="text-xs mt-0.5"
                 style={{ color: "rgba(255,255,255,0.55)", fontFamily: "'Nunito Sans', sans-serif" }}
               >
-                {t("about.edu.school")}
+                {lang === "de" ? "$2,3 Mio. Finanzierung gesichert · Internationale Expansion" : "$2.3M funding raised · International expansion"}
               </div>
             </div>
           </div>

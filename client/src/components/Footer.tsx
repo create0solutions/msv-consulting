@@ -4,7 +4,7 @@
  */
 
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Linkedin, Mail, Phone } from "lucide-react";
+import { Linkedin, Mail, Phone, Search, Sparkles } from "lucide-react";
 
 export default function Footer() {
   const { t } = useLanguage();
@@ -48,7 +48,7 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Services */}
+          {/* Tools */}
           <div>
             <h4
               className="text-white font-bold mb-5 text-sm uppercase tracking-widest"
@@ -60,7 +60,7 @@ export default function Footer() {
               {["grant", "startup", "investor", "ai"].map((key) => (
                 <li key={key}>
                   <a
-                    href="#services"
+                    href="/#services"
                     className="text-sm transition-colors duration-200 hover:text-white"
                     style={{ color: "rgba(255,255,255,0.5)", fontFamily: "'Nunito Sans', sans-serif" }}
                   >
@@ -68,6 +68,26 @@ export default function Footer() {
                   </a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="/foerderungen"
+                  className="text-sm transition-colors duration-200 hover:text-white flex items-center gap-2"
+                  style={{ color: "oklch(0.70 0.17 162)", fontFamily: "'Nunito Sans', sans-serif" }}
+                >
+                  <Search size={12} />
+                  {"Förderungen finden"}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/foerdercheck"
+                  className="text-sm transition-colors duration-200 hover:text-white flex items-center gap-2"
+                  style={{ color: "oklch(0.70 0.17 162)", fontFamily: "'Nunito Sans', sans-serif" }}
+                >
+                  <Sparkles size={12} />
+                  {"KI-Fördercheck"}
+                </a>
+              </li>
             </ul>
           </div>
 

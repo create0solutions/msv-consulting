@@ -142,7 +142,7 @@ export default function HeroSection() {
               <ArrowRight size={18} />
             </a>
             <a
-              href="#services"
+              href="/foerderungen"
               className="inline-flex items-center gap-2 px-7 py-3.5 rounded-lg font-semibold transition-all duration-200 hover:bg-white/10 border"
               style={{
                 color: "white",
