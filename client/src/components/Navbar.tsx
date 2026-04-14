@@ -92,8 +92,8 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Right side: Lang switcher + CTA */}
-          <div className="hidden lg:flex items-center gap-4">
+          {/* Right side: Lang switcher + Action Buttons */}
+          <div className="hidden lg:flex items-center gap-3">
             {/* Language Toggle */}
             <div
               className="flex items-center rounded-full overflow-hidden border text-xs font-semibold"
@@ -123,7 +123,32 @@ export default function Navbar() {
               </button>
             </div>
 
-            {/* CTA Button */}
+            {/* Förderfinder Button */}
+            <a
+              href="/foerderungen"
+              className="px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg border border-transparent"
+              style={{
+                background: "rgba(255,255,255,0.1)",
+                fontFamily: "'Nunito Sans', sans-serif",
+                borderColor: "rgba(255,255,255,0.2)",
+              }}
+            >
+              {lang === "de" ? "Förderungen" : "Grants"}
+            </a>
+
+            {/* KI-Fördercheck Button */}
+            <a
+              href="/foerdercheck"
+              className="px-4 py-2 rounded-lg text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg"
+              style={{
+                background: "oklch(0.70 0.17 162)",
+                fontFamily: "'Nunito Sans', sans-serif",
+              }}
+            >
+              {lang === "de" ? "KI-Check" : "AI Check"}
+            </a>
+
+            {/* Contact CTA Button */}
             <a
               href={isHome ? "#contact" : "/#contact"}
               className="px-5 py-2.5 rounded-lg text-sm font-semibold text-white transition-all duration-200 hover:opacity-90 hover:shadow-lg"
